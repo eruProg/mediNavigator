@@ -1,0 +1,138 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .panel {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #ffb6c1, #ff69b4);
+      transition: all 0.4s ease-in-out;
+    }
+
+    .form-box {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 0px 50px 40px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      backdrop-filter: blur(10px);
+      width: 350px;
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .form-box h2 {
+      text-align: center;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    label {
+      color: white;
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #fff0f5;
+      font-size: 14px;
+      outline: none;
+      transition: background-color 0.3s ease;
+    }
+
+    input:focus, select:focus {
+      background-color: #ffe4ec;
+    }
+
+    button {
+      display: block;
+      margin-top: 15px;
+      background: linear-gradient(to bottom, #ff8fcf, #ff5eaa);
+      border: none;
+      color: white;
+      font-weight: bold;
+      padding: 15px 152px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 0 #ff75b5, 0 6px 12px rgba(255, 105, 180, 0.3);
+      transform: translateY(0);
+    }
+
+    button:hover {
+      cursor: pointer;
+      background: linear-gradient(to bottom, #ff6db4, #ff3f9d);
+    }
+
+    button:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #ff4da1, 0 4px 8px rgba(255, 62, 138, 0.2);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .hospital-info {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 500px;
+      text-align: center;
+      color: white;
+      backdrop-filter: blur(10px);
+    }
+
+    .hospital-info h3 {
+      color: #fff;
+    }
+
+    .top-bar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .top-bar button {
+      width: auto;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .centered-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mediNav, .medNavi {
+      font-size: 52px;
+      color: white;
+      font-weight: bold;
+      margin-top: -20px;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow:
+        -1px -1px 0 #c446b5,
+        1px -1px 0 #da6cb2,
+        -1px  1px 0 #da65a7,
+        1px  1px 0 #e073e8;
+    }
+
+    .side-by-side {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      margin-top: 20px;
+    }

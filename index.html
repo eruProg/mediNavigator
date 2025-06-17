@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mediNav</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="panel" id="inputPanel">
+    <div class="centered-container">
+      <p class="mediNav">MediNav</p>
+      <div class="form-box">
+        <h2>Enter Your Information</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" />
+
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Your Age" min="0" />
+
+        <label for="sex">Sex</label>
+        <input type="text" id="sex" placeholder="Male / Female / Other" />
+
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="Your Location" />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="09xxxxxxxxx" pattern="[0-9]{11}" maxlength="11"/>
+
+        <button onclick="submitForm()">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel hidden" id="hospitalPanel">
+    <div class="top-bar">
+      <button onclick="goBack()">← Back</button>
+    </div>
+    <div class="centered-container">
+      <p class="mediNav">MediNav</p>
+      <div class="side-by-side">
+        <div class="form-box">
+          <h2>Select a Hospital</h2>
+          <label for="hospitalDropdown">Nearby Hospitals</label>
+          <select id="hospitalDropdown">
+            <option value="taytay">Taytay Doctors Multispecialty Hospital (4.2 km)</option>
+            <option value="rizal">Rizal Provincial Hospital System Taytay (1.1 km)</option>
+          </select>
+          <button onclick="showHospitalInfo()">Confirm Selection</button>
+        </div>
+        <div class="hospital-info hidden" id="hospitalInfo"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="style.js">
+    
+  </script>
+</body>
+</html>
